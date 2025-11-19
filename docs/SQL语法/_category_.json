@@ -1,0 +1,8 @@
+{
+  "label": "SQL语法",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "索引基本操作的介绍 //todo：base Faiss的语法来补 https://duckdb.org/docs/stable/core_extensions/vss.html"
+  }
+}
