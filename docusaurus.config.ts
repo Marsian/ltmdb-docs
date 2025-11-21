@@ -41,10 +41,6 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -72,7 +68,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     colorMode: {
-      respectPrefersColorScheme: true,
+      respectPrefersColorScheme: false,
     },
     navbar: {
       title: 'LTMDB',
@@ -90,8 +86,8 @@ const config: Config = {
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/Marsian/ltmdb-docs',
-          label: 'GitHub',
           position: 'right',
+          className: 'header-github-link',
         },
       ],
     },

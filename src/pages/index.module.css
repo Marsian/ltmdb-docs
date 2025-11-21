@@ -3,6 +3,13 @@
  * and scoped locally.
  */
 
+.customLayout {
+
+  [class*="colorModeToggle"] {
+    display: none;
+  }
+}
+
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
