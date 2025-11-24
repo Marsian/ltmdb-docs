@@ -6,10 +6,10 @@ export default function GiscusComponent(): ReactNode {
   const { colorMode } = useColorMode();
   return (
     <Giscus
-      repo="Marsian/ltmdb-giscus" // Replace with your repo
-      repoId="R_kgDOQb5obQ" // Replace with your repo ID
+      repo="Marsian/ltmdb-docs" // Replace with your repo
+      repoId="R_kgDOQYr4Lg" // Replace with your repo ID
       category="General" // Replace with your discussion category
-      categoryId="DIC_kwDOQb5obc4CyqYA" // Replace with your category ID
+      categoryId="DIC_kwDOQYr4Ls4Cysss" // Replace with your category ID
       mapping="pathname"
       strict="0"
       reactionsEnabled="1"
