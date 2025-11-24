@@ -11,17 +11,24 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx('hero hero--primary', styles.homepage)}>
       <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+        <Heading as="h1" className={styles.homepageTitle}>
+          AI native <span className={styles.homepageTitleStrong}>multimodal</span> database 
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
+        <p className={styles.homepageDescription}>
+          InferDB, a multimodal AI inference database, is specifically designed for AI applications. It enables vectorization, storage, and efficient indexing of unstructured data, while supporting multiple query methods such as similarity search, full-text search, and metadata filtering. Compatible with Python and client access, it allows developers to quickly integrate and invoke its capabilities.
+        </p>
+        <div className={styles.homepageButtons}>
+          <Link
+            className="button button--primary button--lg"
+            to="/docs/整体介绍/介绍">
+            Quick Start
+          </Link>
           <Link
             className="button button--secondary button--lg"
             to="/docs/整体介绍/介绍">
-            LTMDB Tutorial - 5min ⏱️
+            Github
           </Link>
         </div>
       </div>

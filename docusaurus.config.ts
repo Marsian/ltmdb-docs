@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'LTMDB',
-  tagline: 'LTMDB is cool',
+  title: 'InferDB',
+  tagline: 'InferDB is cool',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -68,9 +68,9 @@ const config: Config = {
       respectPrefersColorScheme: false,
     },
     navbar: {
-      title: 'LTMDB',
+      title: 'InferDB',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'InferDB Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -132,7 +132,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Transwarp. All rights reserved.`,
     },
     prism: {
       theme: prismThemes.github,

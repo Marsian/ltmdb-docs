@@ -1,11 +1,39 @@
 .features {
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 20px;
   padding: 2rem 0;
   width: 100%;
 }
 
+.featureBlock {
+  padding: 16px;
+  background: #171717;
+  border-radius: 11px 11px 11px 11px;
+  border: 1px solid #363636;
+
+  .featureBlockTitle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+  }
+
+  .featureBlockTitleLogo {
+    height: 18px;
+    width: 18px;
+    opacity: 0.8;
+  }
+}
+
 .featureSvg {
-  height: 200px;
-  width: 200px;
+  height: 400px;
+  margin: 0 72px;
 }
