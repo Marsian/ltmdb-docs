@@ -14,12 +14,12 @@ const FeatureList: FeatureItem[] = [
   {
     title: 'AI native multimodal database',
     Svg: require('@site/static/img/inferdb-1.svg').default,
-    Logo: require('@site/static/img/db.svg').default,
+    Logo: require('@site/static/img/icon-db.svg').default,
   },
   {
     title: 'Dramatic Cost Reduction',
     Svg: require('@site/static/img/inferdb-2.svg').default,
-    Logo: require('@site/static/img/db.svg').default,
+    Logo: require('@site/static/img/icon-cost.svg').default,
   },
 ];
 
