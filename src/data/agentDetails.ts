@@ -7,7 +7,7 @@ export const agentDetailList: DetailItem[] = [
     description:
       "Retains information relevant to the immediate session or a single task chain, such as the recent conversation history and the results of the last few actions.",
     solutions: ["Redis", "OS memory"],
-    Svg: require("@site/static/img/QPS.svg").default,
+    Svg: require("@site/static/img/Agent Real-time Data Processing.svg").default,
   },
   {
     id: "Long-Term Memory",
@@ -15,7 +15,7 @@ export const agentDetailList: DetailItem[] = [
     description:
       "Persists critical information across sessions, such as user preferences. learned procedures, and key outcomes from past interactions.",
     solutions: ["MySOL/PostgreSOL", "Vector DB"],
-    Svg: require("@site/static/img/QPS.svg").default,
+    Svg: require("@site/static/img/Agent Real-time Data Processing.svg").default,
   },
   {
     id: "Instruction Context",
@@ -23,7 +23,7 @@ export const agentDetailList: DetailItem[] = [
     description:
       "Defines the Agent's role, rules, and goals. It includes the system prompt, few-shot examples, and constraints that shape its behavior.",
     solutions: ["Redis", "OS memory"],
-    Svg: require("@site/static/img/QPS.svg").default,
+    Svg: require("@site/static/img/Agent Real-time Data Processing.svg").default,
   },
   {
     id: "Knowledge Memory",
@@ -39,7 +39,7 @@ export const agentDetailList: DetailItem[] = [
     description:
       "The Agent's interface with the external world. It includes the state of tool calls, API responses, code execution results, and environmental feedback.",
     solutions: ["Redis", "OS memory"],
-    Svg: require("@site/static/img/Agent Real-time Data Processing.svg")
+    Svg: require("@site/static/img/QPS.svg")
       .default,
   },
 ];
