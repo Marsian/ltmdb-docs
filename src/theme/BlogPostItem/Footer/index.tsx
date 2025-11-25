@@ -9,7 +9,6 @@ type Props = WrapperProps<typeof FooterType>;
 
 export default function FooterWrapper(props: Props): ReactNode {
   const location = useLocation();
-  console.log(location);
   const isBlogHomePage = location.pathname === '/ltmdb-docs/blog';
 
   return (
