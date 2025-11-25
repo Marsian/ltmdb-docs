@@ -13,7 +13,7 @@ import styles from "./index.module.css";
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx("hero hero--primary", styles.homepage)}>
+    <header className={clsx("hero", styles.homepage)}>
       <div className="container">
         <Heading as="h1" className={styles.homepageTitle}>
           AI Native{" "}

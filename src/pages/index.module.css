@@ -4,7 +4,11 @@
  */
 
 .customLayout {
-  background: #121212;
+  background-color: #121212;
+  background-image: url('/img/inferdb-bg.svg');
+  background-position: 50% 60px;
+  background-repeat: no-repeat;
+  background-size: 100%;
 
   [class*="colorModeToggle"] {
     display: none;
@@ -84,9 +88,7 @@
   padding: 120px 0 70px 0;
   text-align: center;
   position: relative;
-  background-color: #121212;
-  background-image: url('/img/inferdb-bg.svg');
-  background-position: center;
+  background-color: transparent;
   overflow: hidden;
 }
 
