@@ -5,6 +5,7 @@ import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
+  subTitle?: string;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   Logo: React.ComponentType<React.ComponentProps<'svg'>>;
   size?: number;
@@ -20,21 +21,23 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Dramatic Cost Reduction',
+    subTitle: 'Agent cost on db can be 25-33% of Original',
     Svg: require('@site/static/img/inferdb-2.svg').default,
     Logo: require('@site/static/img/icon-cost.svg').default,
     size: 4,
   },
 ];
 
-function Feature({title, Svg, Logo, size}: FeatureItem) {
+function Feature({title, subTitle, Svg, Logo, size}: FeatureItem) {
   return (
     <div className={styles.featureBlock} style={{flexGrow: size}}>
       <div className={styles.featureBlockTitle}>
         <Logo className={styles.featureBlockTitleLogo} role="img" />
         {title}
       </div>
+      {subTitle && <div className={styles.featureBlockSubtitle}>{subTitle}</div>}
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <Svg className={subTitle ? styles.featureSvgWithSubtitle : styles.featureSvg} role="img" />
       </div>
     </div>
   );
