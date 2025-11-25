@@ -42,7 +42,7 @@ export default function Home(): ReactNode {
     <div className={styles.customLayout}>
       <Layout title={`${siteConfig.title}`}>
         <HomepageHeader />
-        <main>
+        <main className={styles.mainContent}>
           <HomepageFeatures />
         </main>
       </Layout>

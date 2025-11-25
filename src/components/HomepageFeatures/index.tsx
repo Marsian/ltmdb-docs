@@ -7,6 +7,7 @@ type FeatureItem = {
   title: string;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   Logo: React.ComponentType<React.ComponentProps<'svg'>>;
+  size?: number;
   description?: ReactNode;
 };
 
@@ -15,17 +16,19 @@ const FeatureList: FeatureItem[] = [
     title: 'AI native multimodal database',
     Svg: require('@site/static/img/inferdb-1.svg').default,
     Logo: require('@site/static/img/icon-db.svg').default,
+    size: 7,
   },
   {
     title: 'Dramatic Cost Reduction',
     Svg: require('@site/static/img/inferdb-2.svg').default,
     Logo: require('@site/static/img/icon-cost.svg').default,
+    size: 4,
   },
 ];
 
-function Feature({title, Svg, Logo}: FeatureItem) {
+function Feature({title, Svg, Logo, size}: FeatureItem) {
   return (
-    <div className={styles.featureBlock}>
+    <div className={styles.featureBlock} style={{flexGrow: size}}>
       <div className={styles.featureBlockTitle}>
         <Logo className={styles.featureBlockTitleLogo} role="img" />
         {title}

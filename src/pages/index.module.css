@@ -49,6 +49,35 @@
   :global .header-github-link:hover:before {
     opacity: 1;
   }
+
+  :global .navbar__toggle {
+    color: #FAFAFA;
+    opacity: 0.6;
+  }
+
+  :global .navbar__toggle:hover {
+    opacity: 1;
+  }
+
+  :global .navbar-sidebar {
+    background-color: #121212;
+  }
+
+  :global .menu__link {
+    font-size: 18px !important;
+    color: #FAFAFA;
+    opacity: 0.6;
+  }
+
+  :global .menu__link:hover {
+    opacity: 1 !important;
+  }
+
+  :global .theme-layout-footer {
+    background-color: #121212;
+    border-top: 1px solid #2E2E2E;
+    opacity: 0.8;
+  }
 }
 
 .homepage {
@@ -117,4 +146,11 @@
     background: #242424;
     border: 1px solid #363636;
   }
+}
+
+.mainContent {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 16px;
 }

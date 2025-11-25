@@ -3,8 +3,10 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
   padding: 2rem 0;
   width: 100%;
+  max-width: 1400px;
 }
 
 .featureBlock {
@@ -35,5 +37,6 @@
 
 .featureSvg {
   height: 400px;
-  margin: 0 72px;
+  min-width: 0;
+  max-width: calc(100% - 72px);
 }
