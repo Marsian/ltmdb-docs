@@ -45,18 +45,18 @@
 
 .themeButton:hover {
   background: #2a2a2a;
-  border-color: var(--ifm-color-primary);
+  border-color: #0C8EFF;
 }
 
 .activeTheme {
-  background: var(--ifm-color-primary) !important;
-  border-color: var(--ifm-color-primary) !important;
+  background: #094CC1 !important;
+  border-color: #0C8EFF !important;
   box-shadow: 0 4px 12px rgba(var(--ifm-color-primary-rgb), 0.3);
 }
 
 .activeTheme:hover {
-  background: var(--ifm-color-primary) !important;
-  border-color: var(--ifm-color-primary) !important;
+  background: #094CC1 !important;
+  border-color: #0C8EFF !important;
 }
 
 .contentContainer {
