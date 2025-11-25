@@ -8,7 +8,6 @@
   background-image: url('/img/inferdb-bg.svg');
   background-position: 50% 60px;
   background-repeat: no-repeat;
-  background-size: 100%;
 
   [class*="colorModeToggle"] {
     display: none;
