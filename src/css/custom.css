@@ -240,12 +240,6 @@ article {
   border-bottom: 1px solid var(--ifm-toc-border-color);
 }
 
-@layer docusaurus.infima {
-    article.margin-bottom--xl {
-      margin-bottom: 2rem !important;
-    }
-  }
-
 article footer {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -259,7 +253,22 @@ article header h2 {
   font-size: 36px;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
+  @layer docusaurus.infima {
+    article.margin-bottom--xl {
+      margin-bottom: 2rem !important;
+    }
+
+    article .margin-vert--md {
+      margin-bottom: 8px !important;
+      margin-top: 8px !important;
+    }
+  }
+
+  article header h1 {
+    font-size: 36px;
+  }
+
   article header h2 {
     font-size: 28px;
   }
