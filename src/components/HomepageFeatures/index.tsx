@@ -2,6 +2,7 @@ import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import { InferDB2 } from './InferDB2';
 
 type FeatureItem = {
   title: string;
@@ -22,7 +23,7 @@ const FeatureList: FeatureItem[] = [
   {
     title: 'Dramatic Cost Reduction',
     subTitle: 'Agent cost on db can be 25-33% of Original',
-    Svg: require('@site/static/img/inferdb-2.svg').default,
+    Svg: InferDB2,
     Logo: require('@site/static/img/icon-cost.svg').default,
     size: 4,
   },

@@ -14,6 +14,7 @@
   background: #171717;
   border-radius: 11px 11px 11px 11px;
   border: 1px solid #363636;
+  height: 475px;
 
   .featureBlockTitle {
     display: flex;
