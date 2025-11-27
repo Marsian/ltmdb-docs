@@ -19,6 +19,7 @@
   --ifm-menu-color-background-hover: #0000;
   --ifm-menu-color-background-active: #f0f6ff;
   --ifm-menu-link-sublist-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSI2IiBmaWxsPSJub25lIj48cGF0aCBzdHJva2U9IiMwMzA2MEIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik05IDUgNSAxIDEgNSIvPjwvc3ZnPg==');
+  --ifm-toc-border-color: #e4e5e7;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --doc-item-container-width: 42rem;
   --sidebar-category-color: #141414;
@@ -37,6 +38,7 @@
   --ifm-menu-color-active: #4d8dff;
   --ifm-menu-color-background-hover: #0000;
   --ifm-menu-color-background-active: #ffffff0d;
+  --ifm-toc-border-color: #585858;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --sidebar-category-color: #f3f3f3;
   --markdown-text-intro-color: #ced6e0;
@@ -234,13 +236,32 @@ legend {
   color: var(--markdown-text-intro-color);
 }
 
+article {
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+}
+
+@layer docusaurus.infima {
+    article.margin-bottom--xl {
+      margin-bottom: 2rem !important;
+    }
+  }
+
+article footer {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+article footer b {
+  font-weight: 400;
+}
+
 article header h2 {
   font-size: 36px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1300px) {
   article header h2 {
-    font-size: 32px;
+    font-size: 28px;
   }
 }
 
