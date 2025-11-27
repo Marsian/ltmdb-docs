@@ -1,4 +1,4 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
@@ -29,16 +29,16 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({title, subTitle, Svg, Logo, size}: FeatureItem) {
+function Feature({ title, subTitle, Svg, Logo, size }: FeatureItem) {
   return (
-    <div className={styles.featureBlock} style={{flexGrow: size}}>
+    <div className={styles.featureBlock} style={{ flexGrow: size }}>
       <div className={styles.featureBlockTitle}>
-        <Logo className={styles.featureBlockTitleLogo} role="img" />
+        <Logo className={styles.featureBlockTitleLogo} role='img' />
         {title}
       </div>
       {subTitle && <div className={styles.featureBlockSubtitle}>{subTitle}</div>}
-      <div className="text--center">
-        <Svg className={subTitle ? styles.featureSvgWithSubtitle : styles.featureSvg} role="img" />
+      <div className='text--center'>
+        <Svg className={subTitle ? styles.featureSvgWithSubtitle : styles.featureSvg} role='img' />
       </div>
     </div>
   );

@@ -1,23 +1,23 @@
-import React, { ReactNode } from "react";
-import Giscus from "@giscus/react";
-import { useColorMode } from "@docusaurus/theme-common";
+import React, { ReactNode } from 'react';
+import Giscus from '@giscus/react';
+import { useColorMode } from '@docusaurus/theme-common';
 
 export default function GiscusComponent(): ReactNode {
   const { colorMode } = useColorMode();
   return (
     <Giscus
-      repo="Marsian/ltmdb-docs" // Replace with your repo
-      repoId="R_kgDOQYr4Lg" // Replace with your repo ID
-      category="General" // Replace with your discussion category
-      categoryId="DIC_kwDOQYr4Ls4Cysss" // Replace with your category ID
-      mapping="pathname"
-      strict="0"
-      reactionsEnabled="1"
-      emitMetadata="0"
-      inputPosition="bottom"
+      repo='Marsian/ltmdb-docs' // Replace with your repo
+      repoId='R_kgDOQYr4Lg' // Replace with your repo ID
+      category='General' // Replace with your discussion category
+      categoryId='DIC_kwDOQYr4Ls4Cysss' // Replace with your category ID
+      mapping='pathname'
+      strict='0'
+      reactionsEnabled='1'
+      emitMetadata='0'
+      inputPosition='bottom'
       theme={colorMode}
-      lang="en"
-      loading="lazy"
+      lang='en'
+      loading='lazy'
     />
   );
 }

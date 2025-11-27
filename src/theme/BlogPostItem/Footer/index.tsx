@@ -1,7 +1,7 @@
-import React, {type ReactNode} from 'react';
+import React, { type ReactNode } from 'react';
 import Footer from '@theme-original/BlogPostItem/Footer';
 import type FooterType from '@theme/BlogPostItem/Footer';
-import type {WrapperProps} from '@docusaurus/types';
+import type { WrapperProps } from '@docusaurus/types';
 import { useLocation } from '@docusaurus/router';
 import GiscusComponent from '@site/src/components/Giscus';
 

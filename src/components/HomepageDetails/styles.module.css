@@ -12,14 +12,14 @@
   text-align: center;
   margin-bottom: 48px;
   font-size: 36px;
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
 .buttonTitle {
   text-align: center;
   margin-bottom: 24px;
   font-size: 20px;
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
 .buttonContainer {
@@ -35,7 +35,7 @@
   background: #171717;
   border: 1px solid #363636;
   border-radius: 50px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 16px;
   line-height: 28px;
   cursor: pointer;
@@ -45,18 +45,18 @@
 
 .themeButton:hover {
   background: #2a2a2a;
-  border-color: #0C8EFF;
+  border-color: #0c8eff;
 }
 
 .activeTheme {
-  background: #094CC1 !important;
-  border-color: #0C8EFF !important;
+  background: #094cc1 !important;
+  border-color: #0c8eff !important;
   box-shadow: 0 4px 12px rgba(var(--ifm-color-primary-rgb), 0.3);
 }
 
 .activeTheme:hover {
-  background: #094CC1 !important;
-  border-color: #0C8EFF !important;
+  background: #094cc1 !important;
+  border-color: #0c8eff !important;
 }
 
 .contentContainer {
@@ -80,7 +80,7 @@
 .contentTitle {
   font-size: 32px;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 20px;
   white-space: pre-line;
 }
@@ -88,7 +88,7 @@
 .contentDescription {
   font-size: 18px;
   line-height: 32px;
-  color: #E0E0E0;
+  color: #e0e0e0;
   margin-bottom: 20px;
 }
 
@@ -99,7 +99,7 @@
   gap: 8px;
   font-size: 16px;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .contentSolutionBlock {
@@ -113,7 +113,7 @@
   line-height: 32px;
   font-size: 18px;
   font-weight: 400;
-  color: #E0E0E0;
+  color: #e0e0e0;
 }
 
 .imageContainer {
@@ -142,7 +142,7 @@
     flex-direction: column;
     gap: 2rem;
   }
-  
+
   .imageContainer {
     width: 100%;
   }
@@ -159,7 +159,7 @@
     gap: 0.5rem;
     margin-bottom: 1rem;
   }
-  
+
   .themeButton {
     width: 100%;
   }
