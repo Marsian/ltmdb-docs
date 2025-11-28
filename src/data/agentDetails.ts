@@ -15,7 +15,7 @@ export const agentDetailList: DetailItem[] = [
     description:
       'Persists critical information across sessions, such as user preferences. learned procedures, and key outcomes from past interactions.',
     solutions: ['MySOL/PostgreSOL', 'Vector DB'],
-    Svg: require('@site/static/img/Agent Real-time Data Processing.svg').default,
+    Svg: require('@site/static/img/OLTP & OLAP.svg').default,
   },
   {
     id: 'Instruction Context',
@@ -31,7 +31,7 @@ export const agentDetailList: DetailItem[] = [
     description:
       "Provides external, domain-specific knowledge the Agent wasn't trained on. It's often accessed via Retrieval-Augmented Generation RAG) from vector databases or knowledge graphs.",
     solutions: ['Graph DB', ' Vector DB', 'File storage'],
-    Svg: require('@site/static/img/OLTP & OLAP.svg').default,
+    Svg: require('@site/static/img/QPS.svg').default,
   },
   {
     id: 'Operational Context',
@@ -39,6 +39,6 @@ export const agentDetailList: DetailItem[] = [
     description:
       "The Agent's interface with the external world. It includes the state of tool calls, API responses, code execution results, and environmental feedback.",
     solutions: ['Redis', 'OS memory'],
-    Svg: require('@site/static/img/QPS.svg').default,
+    Svg: require('@site/static/img/Agent Real-time Data Processing.svg').default,
   },
 ];
