@@ -20,6 +20,7 @@
   --ifm-menu-color-background-active: #f0f6ff;
   --ifm-menu-link-sublist-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSI2IiBmaWxsPSJub25lIj48cGF0aCBzdHJva2U9IiMwMzA2MEIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik05IDUgNSAxIDEgNSIvPjwvc3ZnPg==');
   --ifm-toc-border-color: #e4e5e7;
+  --ifm-navbar-padding-horizontal: 24px;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --doc-item-container-width: 42rem;
   --sidebar-category-color: #141414;
@@ -112,15 +113,18 @@
 }
 
 #__docusaurus .theme-doc-sidebar-container [class^='sidebarViewport'] > a,
-#__docusaurus [class^='sidebar_'] {
+#__docusaurus [class^='docRoot_'] [class^='sidebar_'] {
   padding-inline-end: 24px;
   padding-inline-start: 24px;
 }
 
-#__docusaurus [class^='sidebar_'] {
+#__docusaurus [class^='docRoot_'] [class^='sidebar_'] {
   overflow-y: auto;
-  padding-block-start: 1rem;
   position: static;
+}
+
+#__docusaurus [class^='docRoot_'] [class^='sidebarLogo_'] {
+  margin: 0;
 }
 
 #__docusaurus [class^='sidebar_'] > .menu {
