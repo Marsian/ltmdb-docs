@@ -50,12 +50,13 @@ export default function Home(): ReactNode {
             title='Why AI Agents Require Multiple Databases​'
             subTitle='Agent Context Type:'
             detailList={agentDetailList}
+            width= {'50%'}
           />
           <HomepageDetails
             title='Memory-Centric Storage Engine Architecture​'
             detailList={architectureDetailList}
             imageAlign='left'
-            height={'auto'}
+            width={'40%'}
           />
         </main>
       </Layout>

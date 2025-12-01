@@ -9,8 +9,8 @@ type DetailsProps = {
   subTitle?: string;
   detailList: DetailItem[];
   imageAlign?: 'left' | 'right';
-  width?: number | 'auto';
-  height?: number | 'auto';
+  width?: string | 'auto';
+  height?: string | 'auto';
 };
 
 export default function HomepageDetails({
@@ -18,8 +18,8 @@ export default function HomepageDetails({
   subTitle,
   detailList,
   imageAlign = 'right',
-  width = 720,
-  height = 380,
+  width = '50%',
+  height = 'auto',
 }: DetailsProps): ReactNode {
   const [activeTheme, setActiveTheme] = React.useState(detailList?.[0]?.id || '');
 
