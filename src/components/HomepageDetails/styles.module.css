@@ -129,6 +129,8 @@
   position: relative;
   background: #171717;
   border: 1px solid #363636;
+  animation: fadein 0.5s ease-in-out forwards;
+  opacity: 0;
 }
 
 .detailImage {
@@ -164,5 +166,16 @@
 
   .themeButton {
     width: 100%;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

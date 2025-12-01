@@ -14,7 +14,7 @@ export const agentDetailList: DetailItem[] = [
     title: 'Long-Term Memory',
     description:
       'Persists critical information across sessions, such as user preferences. learned procedures, and key outcomes from past interactions.',
-    solutions: ['MySOL/PostgreSOL', 'Vector DB'],
+    solutions: ['MySQL/PostgreSQL', 'Vector DB'],
     Svg: require('@site/static/img/OLTP & OLAP.svg').default,
   },
   {

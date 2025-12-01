@@ -82,7 +82,7 @@ export default function HomepageDetails({
           )}
         </div>
 
-        <div className={styles.imageContainer}>
+        <div className={styles.imageContainer} key={currentDetail?.id}>
           {currentDetail
             ? React.createElement(currentDetail.Svg, {
                 className: styles.detailImage,
