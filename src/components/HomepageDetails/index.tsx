@@ -9,6 +9,8 @@ type DetailsProps = {
   subTitle?: string;
   detailList: DetailItem[];
   imageAlign?: 'left' | 'right';
+  width?: number | 'auto';
+  height?: number | 'auto';
 };
 
 export default function HomepageDetails({
@@ -16,6 +18,8 @@ export default function HomepageDetails({
   subTitle,
   detailList,
   imageAlign = 'right',
+  width = 720,
+  height = 380,
 }: DetailsProps): ReactNode {
   const [activeTheme, setActiveTheme] = React.useState(detailList?.[0]?.id || '');
 
@@ -82,7 +86,11 @@ export default function HomepageDetails({
           )}
         </div>
 
-        <div className={styles.imageContainer} key={currentDetail?.id}>
+        <div
+          className={styles.imageContainer}
+          key={currentDetail?.id}
+          style={{ width: width, height: height }}
+        >
           {currentDetail
             ? React.createElement(currentDetail.Svg, {
                 className: styles.detailImage,

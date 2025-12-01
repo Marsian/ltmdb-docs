@@ -55,6 +55,7 @@ export default function Home(): ReactNode {
             title='Memory-Centric Storage Engine Architecture​'
             detailList={architectureDetailList}
             imageAlign='left'
+            height={'auto'}
           />
         </main>
       </Layout>
