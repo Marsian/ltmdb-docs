@@ -123,7 +123,7 @@
   align-items: center;
   justify-content: center;
   height: 380px;
-  padding: 8px 32px;
+  padding: 20px 32px;
   overflow: hidden;
   border-radius: 8px;
   position: relative;
@@ -132,7 +132,11 @@
   animation: fadein 0.5s ease-in-out forwards;
   opacity: 0;
 }
-
+.imageContainer > svg { 
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
 .detailImage {
   width: 100%;
   max-width: 100%;
