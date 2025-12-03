@@ -6,6 +6,7 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import HomepageDetails from '@site/src/components/HomepageDetails';
 import Heading from '@theme/Heading';
+import { HtmlClassNameProvider } from '@docusaurus/theme-common';
 import { agentDetailList } from '@site/src/data/agentDetails';
 import { architectureDetailList } from '@site/src/data/architectureDetails';
 
@@ -41,7 +42,7 @@ function HomepageHeader() {
 export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <div className={styles.customLayout}>
+    <HtmlClassNameProvider className="homepage-wrapper">
       <Layout title={`${siteConfig.title}`}>
         <HomepageHeader />
         <main className={styles.mainContent}>
@@ -60,6 +61,6 @@ export default function Home(): ReactNode {
           />
         </main>
       </Layout>
-    </div>
+    </HtmlClassNameProvider>
   );
 }

@@ -3,7 +3,8 @@
  * and scoped locally.
  */
 
-.customLayout {
+:global .homepage-wrapper  {
+  color-scheme: dark;
   background-color: #121212;
   background-image: url('/img/inferdb-bg.svg');
   background-position: 50% 60px;
